@@ -13,7 +13,7 @@
     "mathjs": "^9.4.4"
   },
   "peerDependencies": {
-    "react": "^16.10.0",
+    "react": "^17.0.2",
     "react-native": "*"
   },
   "repository": {

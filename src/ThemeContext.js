@@ -122,7 +122,7 @@ export const ThemeContextProvider = props => {
                 flex: 1.5,
                 flexShrink: 0,
                 justifyContent: "center",
-                minHeight: exprFontSize * 2.3,
+                minHeight: exprFontSize * 0.3,
             },
             expression: {
                 flex: 1,

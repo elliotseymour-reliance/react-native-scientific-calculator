@@ -312,11 +312,11 @@ const Calculators = ({ showLiveResult, scientific: showScientific, customize, th
 
     const Actions = () => <View style={{ flex: 5 }}>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.button} onPressIn={() => functionPressed("sqrt(", "square root = √x")}>
-                <StyledText style={styles.button}>√</StyledText>
+            <TouchableOpacity style={styles.button} onPressIn={() => functionPressed("(")}>
+                <StyledText style={styles.button}>(</StyledText>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => buttonPressed("(", `long press for entering ")"`)} onLongPress={() => buttonPressed(")")} >
-                <StyledText style={styles.button}>( )</StyledText>
+            <TouchableOpacity style={styles.button} onPress={() => buttonPressed(")", )} >
+                <StyledText style={styles.button}>)</StyledText>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPressIn={() => buttonPressed("!", "Factorial")}>
                 <StyledText style={styles.button}>n!</StyledText>
@@ -329,8 +329,8 @@ const Calculators = ({ showLiveResult, scientific: showScientific, customize, th
             </TouchableOpacity>
         </View>
         <View style={styles.row}>
-            <TouchableOpacity style={styles.button} onPressIn={() => functionPressed("cbrt(", "cube root = ∛x")}>
-                <StyledText style={styles.button}>∛</StyledText>
+            <TouchableOpacity style={styles.button} onPressIn={() => functionPressed("sqrt(")}>
+                <StyledText style={styles.button}>√</StyledText>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonNumber} onPressIn={() => numPressed("7")}>
                 <StyledText style={styles.buttonNumber}>7</StyledText>
